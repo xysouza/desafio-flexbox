@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1440px;
+    height: 1024px;
+    background-color: #F9F9F9;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header, .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    background: white;
+}
+
+.navbar {
+    padding: 0 24px 0 24px;
+}
+
+.left {
+    width: 146px;
+    height: 24px;
+}
+
+.left ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left .menu {
+    width: 24px;
+    height: 24px;
+} 
+
+.left .logo {
+    width: 90px;
+    height: 20px;
+}
+
+.center {
+    display: flex;
+    width: 404px;
+    height: 40px;
+}
+
+.center #search {
+    width: 348px;
+    border: 1px solid #CCCCCC;
+}
+
+.center #search-icon {
+    width: 57px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    cursor: pointer;
+}
+
+.right {
+    width: 130px;
+    height: 34px;
+}
+
+.right ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+}
+
+main {
+    width: 952px;
+    height: 746px;
+}
+
+#player {
+    width: 952px;   
+    height: 537px;
+}
+
+.titulo-video {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+}
+
+aside .card {
+    display: flex;
+    gap: 10px;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+.thumb {
+    width: 160px;
+    height: 90px;
+}
+
+.titulo-thumb {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.41px;
+    margin: 0;
+}
+
+.nome-do-canal {
+    width: 196px;
+    height: 14px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    margin: 8px 0 0 0;
+}
+
+.info-thumb {
+    width: 196px;
+    height: 28px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    margin: 7px 0 0 0;
+}
+
+.info-thumb-card {
+    width: 196px;
+    height: 89px;
+}
+
+.containerInfoChannel {
+    display: flex;
+    width: 100%;
+    max-width: calc(952px - 75px);
+    min-width: 902px;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.perfil .channelAvatar {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+}
+
+.infoPerfil {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.infoPerfil p {
+    width: 106px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.infoPerfil p #inscritos {
+    color: #515151;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.inscrever #subscribe {
+    background: red;
+    width: 159px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    cursor: pointer;
+}
+
+.like {
+    width: 63px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.like #likeIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.like #likes {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    white-space: nowrap;
+}
+
+.deslike {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 24px;
+}
+
+.deslike #deslikeIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.deslike #deslikeText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    white-space: nowrap;
+}
+
+.share {
+    display: flex;
+    align-items: center;
+    width: 115px;
+    height: 24px;
+}
+
+.share #shareIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.share #shareText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    white-space: nowrap; 
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    width: 95px;
+    height: 24px;
+}
+
+.download #downloadIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.download #downloadText {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.41px;
+    white-space: nowrap; 
+}
+
+.infoVideo {
+    width: 391px;
+    height: 16px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16.41px;
+    white-space: nowrap; 
+}
+
+.descricao {
+    width: 520px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #515151;
+}
